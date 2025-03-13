@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Checkout</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" id="billingName"><br>
+
+        <label>Address:</label>
+        <input type="text" id="billingAddress"><br>
+
+        <label>Payment Method:</label>
+        <select id="paymentMethod">
+            <option value="Credit Card">Credit Card</option>
+            <option value="UPI">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+        </select><br>
+
+        <button id="placeOrderBtn">Place Order</button>
+    </form>
+
+    <div id="orderSuccess" style="display: none;">Order Placed Successfully!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
